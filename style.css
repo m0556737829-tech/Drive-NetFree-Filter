@@ -1,0 +1,3 @@
+.dnf-blocked { opacity:.45 !important; filter:grayscale(1) !important; }
+.dnf-badge { display:inline-block; margin-inline-start:8px; padding:2px 7px; border-radius:10px; background:#e5e7eb; color:#374151; font:11px Arial,sans-serif; vertical-align:middle; }
+.dnf-blocked .dnf-badge { background:#d1d5db; color:#4b5563; }
