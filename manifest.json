@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "סינון נטפרי ל-Google Drive",
+  "version": "1.0.0",
+  "description": "מסמן פריטים ב-Google Drive לפי זיהוי הפניה לעמוד חסימה של נטפרי.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://drive.google.com/*",
+    "https://docs.google.com/*",
+    "https://netfree.link/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://drive.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
