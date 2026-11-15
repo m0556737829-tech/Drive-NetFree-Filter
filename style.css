@@ -1,3 +1,9 @@
-.dnf-blocked { opacity:.45 !important; filter:grayscale(1) !important; }
-.dnf-badge { display:inline-block; margin-inline-start:8px; padding:2px 7px; border-radius:10px; background:#e5e7eb; color:#374151; font:11px Arial,sans-serif; vertical-align:middle; }
-.dnf-blocked .dnf-badge { background:#d1d5db; color:#4b5563; }
+.dnf-blocked{opacity:.48!important;filter:grayscale(1)!important}
+.dnf-badge{display:inline-block;margin-inline-start:8px;padding:2px 7px;border-radius:10px;background:#e5e7eb;color:#374151;font:11px Arial,sans-serif;vertical-align:middle;white-space:nowrap}
+.dnf-blocked .dnf-badge{background:#d1d5db;color:#374151}
+.dnf-opened .dnf-badge{background:#dcfce7;color:#166534}
+.dnf-unknown .dnf-badge{background:#fef3c7;color:#92400e}
+#dnf-progress{position:fixed;z-index:999999;left:18px;bottom:18px;width:270px;padding:13px;border:1px solid #cbd5e1;border-radius:12px;background:#fff;color:#172033;box-shadow:0 5px 24px #0002;font:13px Arial,sans-serif;direction:rtl}
+#dnf-progress b{display:block;margin-bottom:8px;font-size:15px}
+#dnf-progress .dnf-progress-text,#dnf-progress .dnf-progress-counts{margin:5px 0;line-height:1.5}
+#dnf-progress button{margin-top:7px;padding:6px 12px;border:0;border-radius:7px;background:#e5e7eb;cursor:pointer}
